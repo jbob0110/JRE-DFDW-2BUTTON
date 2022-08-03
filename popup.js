@@ -162,9 +162,7 @@ window.onload = () => {
       //window.open(chrome.runtime.getURL('options.html'));
     //}
   //};
-};
-
-window.onload = () => {
+  
   document.getElementById('scYesA').onclick = () => {
     //var Po = document.getElementById('POs').value;
     //var Sm = document.getElementById('SMs').value;
