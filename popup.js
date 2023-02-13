@@ -133,7 +133,7 @@ window.onload = () => {
         "project":{  "key": project },
         "parent":{ "key": jiraKey},
         "summary":"Project Kickoff",
-        "description":"",
+        "description":"* List out what the code changes would be /n * List out methods that will be needed /n * Check to see if test data that is needed is available or needs to be there /n* Anything additional the developer thinks needs to be shared with the team",
         "issuetype":{  "name":"Sub-task"},
         "components":[{ "name": gComp}],
         "customfield_22100": gAsset,
