@@ -141,7 +141,7 @@ window.onload = () => {
       }
       }
     );
-    console.log("Tech Design Sent");
+    console.log("Project Kickoff Sent");
     
     addSubTask(
       {"fields":{  
@@ -230,6 +230,24 @@ window.onload = () => {
       }
     );
     console.log("Tech Design Sent");  
+  };
+
+  document.getElementById('scYesB').onclick = () => {
+    document.getElementById('loader').style.display = "block";
+    addSubTask(
+      {"fields":{
+        "project":{  "key": project },
+        "parent":{ "key": jiraKey},
+        "summary":"Project Kickoff",
+        "description":"* List out what the code changes would be /n * List out methods that will be needed /n * Check to see if test data that is needed is available or needs to be there /n* Anything additional the developer thinks needs to be shared with the team",
+        "issuetype":{  "name":"Sub-task"},
+        "components":[{ "name": gComp}],
+        "customfield_22100": gAsset,
+        "customfield_22101": gAlignTeam
+      }
+      }
+    );
+    console.log("Project Kickoff Sent");
   };
 };
 
